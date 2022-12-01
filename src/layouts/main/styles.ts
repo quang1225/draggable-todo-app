@@ -29,9 +29,7 @@ export const Wrapper = styled.div`
     }
 
     button {
-      min-height: 32px;
-      min-width: 80px;
-      padding: 4px 8px;
+      padding: 3px 16px;
       cursor: pointer;
       display: inline-block;
       outline: 0;

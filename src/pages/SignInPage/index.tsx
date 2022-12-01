@@ -10,8 +10,8 @@ import { Wrapper } from "./styles";
 
 const SignInPage = () => {
   const [form, setForm] = useState({
-    userId: "",
-    password: "",
+    userId: "firstUser",
+    password: "123",
   });
   const navigate = useNavigate();
 
