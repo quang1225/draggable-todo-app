@@ -8,7 +8,7 @@ export const mockToken = 'testabc.xyz.ahk'
 
 class ApiFrontend extends IAPI {
     async signIn(username: string, password: string): Promise<string>{
-        if (username === 'firstUser' && password === 'example') {
+        if (username === 'firstUser' && password === '123') {
             return Promise.resolve(mockToken)
         }
 

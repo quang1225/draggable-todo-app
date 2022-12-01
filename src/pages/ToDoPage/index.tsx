@@ -65,7 +65,7 @@ const ToDoPage = () => {
       <div className="list-container">
         <div className="input-wrap">
           <div className="form-control">
-            <input type="text" placeholder="Add a Task" ref={inputRef} onKeyDown={onCreateTodo} />
+            <input type="text" placeholder="Type and press ENTER to add a task..." ref={inputRef} onKeyDown={onCreateTodo} />
           </div>
         </div>
 

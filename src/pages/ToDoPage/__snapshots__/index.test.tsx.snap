@@ -20,7 +20,7 @@ exports[`snapshot should return snapshot 1`] = `
       >
         <input
           onKeyDown={[Function]}
-          placeholder="Add a Task"
+          placeholder="Type and press ENTER to add a task..."
           type="text"
         />
       </div>

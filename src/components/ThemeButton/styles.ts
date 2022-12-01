@@ -60,5 +60,6 @@ export const Wrapper = styled.div`
     display: block;
     padding: 0.5rem 0 0;
     transition: color 500ms;
+    user-select: none;
   }
 `;

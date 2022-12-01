@@ -10,6 +10,8 @@ const ThemeButton = () => {
     dispatch,
   } = useAppContext();
 
+  const isDark = theme === Themes.Dark;
+
   const toggleTheme = () => {
     if (theme === Themes.Light) {
       dispatch(setTheme(Themes.Dark));
@@ -24,9 +26,9 @@ const ThemeButton = () => {
 
   return (
     <Wrapper onClick={toggleTheme}>
-      <input id="toggle" className="toggle" type="checkbox" checked={theme === Themes.Dark} onChange={onChange} />
+      <input id="toggle" className="toggle" type="checkbox" checked={isDark} onChange={onChange} />
       <label htmlFor="toggle" className="title">
-        Toggle dark mode
+        Switch to {isDark ? "Light mode" : "Dark mode"}
       </label>
     </Wrapper>
   );
