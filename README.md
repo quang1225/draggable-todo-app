@@ -2,7 +2,7 @@
 
 A React, Typescript draggable todo app with Mock API and Unit Testing
 
-[Live Demo](https://draggable-todo-app.quang.work) :point_left:
+[Live Demo](https://todo-app.quang.work) :point_left:
 
 ## Getting started
 - Run ```yarn``` or ```npm install``` if this is the first time you clone this repo (`master` branch).
