@@ -13,6 +13,7 @@ const ThemeButton = () => {
   const isDark = theme === Themes.Dark;
 
   const toggleTheme = () => {
+    console.log("toggleTheme");
     if (theme === Themes.Light) {
       dispatch(setTheme(Themes.Dark));
     } else {
@@ -20,16 +21,10 @@ const ThemeButton = () => {
     }
   };
 
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setTheme(e.target.checked ? Themes.Light : Themes.Dark));
-  };
-
   return (
     <Wrapper onClick={toggleTheme}>
-      <input id="toggle" className="toggle" type="checkbox" checked={isDark} onChange={onChange} />
-      <label htmlFor="toggle" className="title">
-        Switch to {isDark ? "Light mode" : "Dark mode"}
-      </label>
+      <input className="toggle" type="checkbox" checked={isDark} />
+      <label className="title">Switch to {isDark ? "Light mode" : "Dark mode"}</label>
     </Wrapper>
   );
 };
